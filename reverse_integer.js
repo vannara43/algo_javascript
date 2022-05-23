@@ -9,4 +9,9 @@ const reverseInt = (n) => {
     return parseInt(n.toString().split('').reverse('').join(''))
 }
 
-console.log(reverseInt(21));
+console.log({
+    testcase1: reverseInt(52),
+    testcase2: reverseInt(500),
+    testcase3: reverseInt(-51),
+    testcase4: reverseInt(-900),
+});
