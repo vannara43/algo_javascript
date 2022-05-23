@@ -12,3 +12,12 @@ const revString = (str) => {
 }
 
 revString("apple");
+
+//method 2
+(function (str) {
+    let reversed = '';
+    for (let character of str) {
+        reversed = character + reversed
+    }
+    console.log(reversed)
+})("Greetings!")
