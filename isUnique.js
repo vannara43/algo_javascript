@@ -1,5 +1,6 @@
 //check to see if value is unique
 
+//method 1
 const isUnique = (str) => {
     const obj = {};
 
@@ -20,3 +21,12 @@ const isUnique = (str) => {
 console.log({
     IsUnique: isUnique("naruto")
 })
+
+//method 2
+function checkUnique(str) {
+    let set = new Set(str);
+    if (set.size === str.length) return true;
+    return false;
+}
+
+console.log(checkUnique("naruto"))
