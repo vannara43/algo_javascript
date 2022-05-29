@@ -1,4 +1,4 @@
-array = [2, 5, 3, 4, 1]
+array = [2, 5, 3, 4, 1, 6, 10, 7, 20, 8, -2, -10]
 console.log("Length of array is", array.length)
 
 // function quickSort(array) {

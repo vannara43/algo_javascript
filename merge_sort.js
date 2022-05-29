@@ -2,7 +2,7 @@
 //two functions
 //need middle, left, right for function 1
 
-array = [2, 5, 3, 4, 1, 6]
+array = [2, 5, 3, 4, 1, 6, 10, 7, 20, 8, -2, -10]
 console.log("Length of array is", array.length)
 
 
@@ -14,6 +14,7 @@ function mergeSort(array) {
     const middle = Math.floor(array.length / 2);
     const left = array.slice(0, middle);
     const right = array.slice(middle);
+    console.log("Splitting left and right list")
 
     // Using recursion to combine the left and right
     return merge(
@@ -31,17 +32,17 @@ function merge(left, right) {
         if (left[leftIndex] < right[rightIndex]) {
             resultArray.push(left[leftIndex]);
             leftIndex++;
-            console.log(leftIndex, "left")
         } else {
             resultArray.push(right[rightIndex]);
             rightIndex++;
-            console.log(rightIndex, "right")
         }
     }
 
-    return resultArray
-        .concat(left.slice(leftIndex))
-        .concat(right.slice(rightIndex));
+    return resultArray.concat(left.slice(leftIndex), right.slice(rightIndex));
+
+    // return resultArray
+    //     .concat(left.slice(leftIndex))
+    //     .concat(right.slice(rightIndex));
 }
 
 console.log(mergeSort(array))
