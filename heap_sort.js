@@ -1,4 +1,4 @@
-//heap sort
+//heap sort //broke
 
 array = [2, 5, 3, 4, 1, 6, 10, 7, 20, 8, -2, -1, -5]
 console.log("Length of array is", array.length)
