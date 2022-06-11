@@ -1,1 +1,3 @@
-[resultArray, left.slice(leftIndex), right.slice(rightIndex)]
+
+    // testcase3: revString("tango"),
+    // testcase4: revString("eggo")
