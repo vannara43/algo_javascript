@@ -1,4 +1,5 @@
 //return the sum of all array elements
+//HackerRank Challenge
 
 let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20];
 let array2 = [40, 200, 30, 40, 50, 60, 70, 80, 90, 1000, 105, 220];
